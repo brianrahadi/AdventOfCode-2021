@@ -2,7 +2,7 @@
 
 import sys;
 
-f = open("input.txt", "r")
+f = open("day1-input.txt", "r")
 prev = sys.maxsize
 
 counter = 0
