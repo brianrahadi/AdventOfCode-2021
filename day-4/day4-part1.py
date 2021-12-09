@@ -48,6 +48,8 @@ def printBoard(board, numBoard):
         print()
         
 def play():
+    counter = 0
+    set = {}
     for ans in answer:
         for numBoard in range(len(boards)):
             for row in range(5):
@@ -55,6 +57,8 @@ def play():
                     if boards[numBoard][row][col] == ans:
                         markeds[numBoard][row][col] = True
             for diag in range(5):
-                if (check_board_row(markeds, numBoard, diag, 0) or (check_board_col(markeds, numBoard, 0, diag))):
-                    return countNum(boards[numBoard], markeds[numBoard]) * int(ans)
-print(play())
+                if ((check_board_row(markeds, numBoard, diag, 0) or (check_board_col(markeds, numBoard, 0, diag))) and numBoard not in set):
+                    set[numBoard] = True
+                    print(countNum(boards[numBoard], markeds[numBoard]) * int(ans))
+                    
+play()
