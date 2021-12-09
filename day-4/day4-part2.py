@@ -16,21 +16,17 @@ for line in range(2, len(list), 6):
     markeds.append(marked)
     boards.append(board)
 
-def check_board_row(markeds, numBoard, row, col):
+def check_board_row(markeds, numBoard, row):
     for i in range(5):
-        if not (markeds[numBoard][row][col+i]):
+        if not (markeds[numBoard][row][i]):
             return False
     return True
 
-def check_board_col(markeds, numBoard, row, col):
+def check_board_col(markeds, numBoard, col):
     for i in range(5):
-        if not (markeds[numBoard][row+i][col]):
+        if not (markeds[numBoard][i][col]):
             return False
     return True
-
-def mark_board(num, boards, markeds, numBoard, row, col):
-    if boards[numBoard][row][col] == num:
-        markeds[numBoard][row][col] = True
 
 def countNum(board, marked):
     num = 0
@@ -56,9 +52,10 @@ def play():
                     if boards[numBoard][row][col] == ans:
                         markeds[numBoard][row][col] = True
             for diag in range(5):
-                if ((check_board_row(markeds, numBoard, diag, 0) or (check_board_col(markeds, numBoard, 0, diag))) and numBoard not in set):
+                if (numBoard not in set and (check_board_row(markeds, numBoard, diag) or (check_board_col(markeds, numBoard, diag)))):
                     set[numBoard] = True
                     print(countNum(boards[numBoard], markeds[numBoard]) * int(ans))
 
-play() ## last board is 3178
+play() 
+## last board is 3178
 

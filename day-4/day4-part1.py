@@ -28,10 +28,6 @@ def check_board_col(markeds, numBoard, row, col):
             return False
     return True
 
-def mark_board(num, boards, markeds, numBoard, row, col):
-    if boards[numBoard][row][col] == num:
-        markeds[numBoard][row][col] = True
-
 def countNum(board, marked):
     num = 0
     for row in range(5):
