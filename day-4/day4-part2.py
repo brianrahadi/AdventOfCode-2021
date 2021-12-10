@@ -1,3 +1,5 @@
+# figure out which board will win last
+
 list = [x for x in open("day4-input.txt").read().strip().split("\n")]
 
 answer = list[0].split(',')
@@ -43,7 +45,6 @@ def printBoard(board, numBoard):
         print()
         
 def play():
-    counter = 0
     set = {}
     for ans in answer:
         for numBoard in range(len(boards)):

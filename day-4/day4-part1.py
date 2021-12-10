@@ -1,3 +1,5 @@
+# What will your final score be if you choose that board?
+
 list = [x for x in open("day4-input.txt").read().strip().split("\n")]
 
 answer = list[0].split(',')
