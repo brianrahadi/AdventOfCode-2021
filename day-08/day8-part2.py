@@ -1,3 +1,6 @@
+
+# I learned about sets and subsets from https://github.com/tadeuszwachowski/adventofcode/blob/master/2021/08/8_2.py
+
 sum_of_numbers = 0
 
 f = [x for x in open('day8-input.txt').read().strip().split('\n')]

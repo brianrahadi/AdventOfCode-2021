@@ -1,6 +1,7 @@
 # What do you get if you multiply together the sizes of the three largest basins?
 
-# I copied this answer from reddit, in here, I managed to learn about queue using python
+# I copied this answer from reddit, in here, I managed to learn more about BFS using queue. https://github.com/jonathanpaulson/AdventOfCode/blob/master/2021/9.py
+
 from collections import deque
 
 G = []

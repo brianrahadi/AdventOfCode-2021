@@ -1,6 +1,5 @@
 ## In the output values, how many times do digits 1, 4, 7, or 8 appear?
 
-
 file = [x for x in open('day8-input.txt').read().strip().split('\n')]
 
 for i in range(file.__len__()):
