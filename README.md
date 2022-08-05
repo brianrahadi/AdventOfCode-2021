@@ -10,6 +10,5 @@ At first, I was just mostly curious. But now, I realized I wanted to strengthen 
 In short, I want to code better in Python :)
 
 ## Did you code this by yourself?
-I will try to do all the challenges all by myself, but it seems difficult at certain days so I need to learn from others. I will cite the source of anything that is not made by me and explain what I learned from the code. I can say for sure that this has been an amazing learning experience.
-
+I will try to do all the challenges all by myself, but it seems difficult at certain days so I need to learn from others. I will cite the source of anything that is not made by me and explain what I learned from the code.
 
